@@ -62,6 +62,6 @@ I have just barely started on a lambda function which is supposed to compare API
 ## Flowchart
 
 ![flowchart](ESP32Code/flowchart.png)
-As you can see in the picture I've got rules applied to topics esp32/+/pub and sub, the + here is incase I would increase the number of devices connected it would still include their data in the rule, since the space where the + is represents the device id. 
+As you can see in the architexture I've got rules applied to topics esp32/+/pub and sub, the + here is incase I would increase the number of devices connected it would still include their data in the rule, since the + is representing the device id. 
 
 <a href="#top">Return to top</a></p>
