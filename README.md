@@ -21,6 +21,7 @@
     - [Component summary](#component-summary)
 
 3. [Flowchart](#flowchart)
+4. [Visualization](#visualization)
 
 ---
 
@@ -63,5 +64,14 @@ I have just barely started on a lambda function which is supposed to compare API
 
 ![flowchart](ESP32Code/flowchart.png)
 As you can see in the architexture I've got rules applied to topics esp32/+/pub and sub, the + here is incase I would increase the number of devices connected it would still include their data in the rule, since the + is representing the device id. 
+
+## Visualization
+![quicksight](ESP32Code/visuals.png)
+
+This is currently how the sensor temp looks like being visualized with AWS Quicksight. Unfortunately it didn't get funnier than this.
+
+## Security
+
+I've currently got the certificates for connecting to AWS hardcoded into the esp connect code which is obviously not the way to go. If you were use this in a real business case you would use something like AWS Key Management Service to control authorization, certificates and encryption in a much smoother way. AWS Secret manager would perhaps be an even wiser option, something i was going to implement into my lambda function for my API key.
 
 <a href="#top">Return to top</a></p>
