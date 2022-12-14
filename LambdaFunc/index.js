@@ -6,7 +6,7 @@ var nummer = 1;
 
 // define the Lambda function
 exports.handler = (event) => {
-  // make an HTTPS request to the external API using the 'https' module
+  // make an HTTPS request to the external API using the 'https' module, this apikey is expired.
   const response = https.get(`https://api.openweathermap.org/data/2.5/weather?lat=59.305998776&lon=18.021260&appid=9186f9b0851ec31c8e991398ce3e1f98&units=metric`, (res) => {
     let data = '';
     
