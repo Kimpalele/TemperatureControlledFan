@@ -47,7 +47,7 @@ In this project im using an Arduino Uno R3 to read the value from a TMP36 sensor
 
 ### AWS Setup
 
-In aws Ive set up a device, my esp32 and attached the right policies for it to be able to connect with its certificates and be able to publish and subscribe to topics. It  Ive got a API call set up using a lambda function which stores the temperature data in DynamoDB, and attached it to a schedule using AWS Eventbridge that invokes the function every 15 minutes. 
+In aws I've set up a device, my esp32 and attached the right policies for it to be able to connect with its certificates and be able to publish and subscribe to topics. It  I've got a API call set up using a lambda function which stores the temperature data in DynamoDB, and attached it to a schedule using AWS Eventbridge that invokes the function every 15 minutes. 
 I have just barely started on a lambda function which is supposed to compare API temp(outside) with sensor temp and send a response back to my hardware.
 
 ### Component Summary
